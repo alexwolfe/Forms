@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Alexander Wolfe -- @alexwolfe
+    Rob Levin -- @roblevintennis
+
+# THANKS
+    The Sass Team
+    Google Prettify for making my code snippets look nicer!
+    Font Awesome for the great looking font icons.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Sass

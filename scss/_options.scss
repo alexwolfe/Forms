@@ -1,0 +1,43 @@
+//////////////////////////////////////////////////////////
+// BASE DEFAULTS /////////////////////////////////////////
+//////////////////////////////////////////////////////////
+$unicorn-form-namespace: '.form'; //prefix for all classes
+$unicorn-form-bgcolor: #EEE;
+$unicorn-form-fields-bgcolor: #FFF;
+$unicorn-form-link-color: #66afe9;
+
+
+//////////////////////////////////////////////////////////
+// TYPOGRAPHY ////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+$unicorn-form-font-color: #666 !default;
+$unicorn-form-font-dark: darken($unicorn-form-font-color, 10%) !default;
+$unicorn-form-font-muted: lighten($unicorn-form-font-color, 10%) !default;
+$unicorn-form-font-size: 14px !default;
+$unicorn-form-base-line-height: $unicorn-form-font-size * 1.4 !default;
+$unicorn-form-small-font-size: 12px !default;
+$unicorn-form-font-weight: 300 !default;
+$unicorn-form-font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$unicorn-form-error-color: #cc0000 !default;
+
+
+//////////////////////////////////////////////////////////
+// FIELDS ////////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+$unicorn-form-input-height: $unicorn-form-font-size * 2.2 !default;
+$unicorn-form-input-gutter: $unicorn-form-font-size * 1.5 !default;
+$unicorn-form-transition-duration: 0.2s !default;
+$unicorn-form-border-radius: 4px !default;
+$unicorn-form-placeholder-color: $unicorn-form-font-muted !default;
+$unicorn-form-placeholder-focus-color: lighten($unicorn-form-font-muted, 15%) !default;
+$unicorn-form-border-color: rgba(0,0,0,0.2);
+$unicorn-form-checkbox-font-size: $unicorn-form-small-font-size !default;
+$unicorn-form-checkbox-height: 13px !default;;
+
+//////////////////////////////////////////////////////////
+// RESPONSIVE ////////////////////////////////////////////
+//////////////////////////////////////////////////////////
+//TODO: Move to _responsive partial
+$unicorn-form-responsive: 'enabled' !default;
+$unicorn-form-small-breakpoint: 480px !default;
+$unicorn-form-tablet-breakpoint: 900px !default;

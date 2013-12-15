@@ -1,0 +1,158 @@
+@import 'options';
+@import 'mixins';
+@import "compass/css3";
+
+#{$unicorn-form-namespace} {
+    background: $unicorn-form-bgcolor;
+}
+
+label,
+input,
+textarea {
+    color: $unicorn-form-font-color;
+    font-size: $unicorn-form-font-size;
+    font-family: $unicorn-form-font-family;
+    font-weight: $unicorn-form-font-weight;
+}
+
+#{$unicorn-form-namespace}-field-group {
+    margin-bottom: $unicorn-form-font-size;
+    #{$unicorn-form-namespace}-field-label {
+        display: block;
+        color: $unicorn-form-font-dark;
+    }
+
+    #{$unicorn-form-namespace}-field {
+        position: relative;
+        /* TODO
+        #{$unicorn-form-namespace}-errors {}
+        */
+    }
+}
+
+@if($unicorn-form-responsive == 'enabled') {
+
+    @media screen and (min-width: $unicorn-form-small-breakpoint) {
+
+        #{$unicorn-form-namespace}-labels-left {
+            #{$unicorn-form-namespace}-field-group {
+                @include clearfix();
+            }
+            #{$unicorn-form-namespace}-field-label {
+                position: relative;
+                left: $unicorn-form-input-gutter / 2;
+                padding: ($unicorn-form-input-height - ($unicorn-form-font-size + 2)) / 2 0;
+                line-height: $unicorn-form-font-size + 2;
+                text-align: right;
+            }
+        }
+    }
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    display: inline-block;
+    height: $unicorn-form-input-height;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 $unicorn-form-font-size / 2;
+    background: $unicorn-form-fields-bgcolor;
+    border: 1px solid $unicorn-form-border-color;
+    @include border-radius($unicorn-form-border-radius);
+    @include box-shadow(inset 0px 1px 0px rgba(0,0,0,0.1));
+
+    outline: none;
+    -webkit-appearance: none;
+
+    &:focus,
+    &.focus {
+        border-color: $unicorn-form-link-color;
+        @include box-shadow(inset 0px 1px 1px rgba(0,0,0,0.05), 0 0 5px rgba($unicorn-form-link-color, 0.5));
+        outline: 0;
+    }
+}
+
+//http://css-tricks.com/snippets/css/turn-off-number-input-spinners/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+textarea {
+    height: auto;
+    min-width: 100%;
+    min-height: $unicorn-form-input-height;
+    padding: $unicorn-form-font-size / 2;
+}
+
+select {
+    opacity: 0;
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: $unicorn-form-input-height;
+    font-size: $unicorn-form-font-size;
+    padding: 0 $unicorn-form-font-size / 2;
+    -webkit-appearance: none;
+    option {
+        font-size: $unicorn-form-small-font-size;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: $unicorn-form-placeholder-color;
+    @include transition($unicorn-form-transition-duration all);
+}
+:-moz-placeholder {
+    color: $unicorn-form-placeholder-color;
+    @include transition($unicorn-form-transition-duration all);
+}
+::-webkit-input-placeholder:focus {
+    color: $unicorn-form-placeholder-focus-color;
+}
+:-moz-placeholder:focus {
+    color: $unicorn-form-placeholder-focus-color;
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin: 0;
+    cursor: pointer;
+}
+
+#{$unicorn-form-namespace}-checkbox {
+    display: block;
+    position: relative;
+    background: $unicorn-form-fields-bgcolor;
+    padding: ($unicorn-form-base-line-height - ($unicorn-form-checkbox-font-size * 1.2)) / 2 0 ($unicorn-form-base-line-height - ($unicorn-form-checkbox-font-size * 1.2)) / 2 $unicorn-form-checkbox-height * 1.61;
+    font-size: $unicorn-form-checkbox-font-size;
+    height: $unicorn-form-font-size * 1.2;
+    width: $unicorn-form-font-size * 1.2;
+    line-height: 1.2;
+    cursor: pointer;
+    input[type=radio],
+    input[type=checkbox] {
+        display: block;
+        position: absolute;
+        top: ($unicorn-form-base-line-height - $unicorn-form-checkbox-height) / 2;
+        left: 0px;
+    }
+    a {
+        text-decoration: underline;
+    }
+}
