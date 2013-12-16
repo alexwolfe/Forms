@@ -13,3 +13,11 @@
 .clear {
     @include clearfix();
 }
+
+// PIXELS TO PERCENTAGES
+// $target: the desired font size for the element
+// $parent: the targets parent element font size (default: 16)
+//------------------------------------------
+@function pxtopercent($target, $parent: 16) {
+    @return percentage($target / $parent);
+}

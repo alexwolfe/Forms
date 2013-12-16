@@ -33,19 +33,7 @@ textarea {
 @if($unicorn-form-responsive == 'enabled') {
 
     @media screen and (min-width: $unicorn-form-small-breakpoint) {
-
-        #{$unicorn-form-namespace}-labels-left {
-            #{$unicorn-form-namespace}-field-group {
-                @include clearfix();
-            }
-            #{$unicorn-form-namespace}-field-label {
-                position: relative;
-                left: $unicorn-form-input-gutter / 2;
-                padding: ($unicorn-form-input-height - ($unicorn-form-font-size + 2)) / 2 0;
-                line-height: $unicorn-form-font-size + 2;
-                text-align: right;
-            }
-        }
+        //TODO
     }
 }
 
@@ -65,14 +53,17 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
     display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
     height: $unicorn-form-input-height;
     width: 100%;
     max-width: 100%;
-    padding: 0 $unicorn-form-font-size / 2;
+    padding: $unicorn-form-input-padding;
     background: $unicorn-form-fields-bgcolor;
     border: 1px solid $unicorn-form-border-color;
     @include border-radius($unicorn-form-border-radius);
-    @include box-shadow(inset 0px 1px 0px rgba(0,0,0,0.1));
+    @include box-shadow(inset 0px 1px 1px rgba(0,0,0,0.075));
 
     outline: none;
     -webkit-appearance: none;

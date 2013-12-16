@@ -24,8 +24,9 @@ $unicorn-form-error-color: #cc0000 !default;
 //////////////////////////////////////////////////////////
 // FIELDS ////////////////////////////////////////////////
 //////////////////////////////////////////////////////////
-$unicorn-form-input-height: $unicorn-form-font-size * 2.2 !default;
+$unicorn-form-input-height: $unicorn-form-font-size * 3 !default;
 $unicorn-form-input-gutter: $unicorn-form-font-size * 1.5 !default;
+$unicorn-form-input-padding: $unicorn-form-font-size / 2 !default;
 $unicorn-form-transition-duration: 0.2s !default;
 $unicorn-form-border-radius: 4px !default;
 $unicorn-form-placeholder-color: $unicorn-form-font-muted !default;
