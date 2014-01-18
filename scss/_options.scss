@@ -1,11 +1,14 @@
 //////////////////////////////////////////////////////////
 // BASE DEFAULTS /////////////////////////////////////////
 //////////////////////////////////////////////////////////
-$unicorn-form-namespace: '.form'; //prefix for all classes
-$unicorn-form-bgcolor: #EEE;
-$unicorn-form-fields-bgcolor: #FFF;
-$unicorn-form-link-color: #66afe9;
-
+$unicorn-form-namespace: '.form' !default; //prefix for all classes
+$unicorn-form-bgcolor: #EEE !default;
+$unicorn-form-fields-bgcolor: #FFF !default;
+$unicorn-form-link-color: #66afe9 !default;
+//Set this to false if you want things like up/down number arrows on right side
+$unicorn-turn-off-number-input-spinners: true !default;
+$unicorn-form-link-color: #66afe9 !default;
+$unicorn-form-color-field-width: 50px !default;
 
 //////////////////////////////////////////////////////////
 // TYPOGRAPHY ////////////////////////////////////////////

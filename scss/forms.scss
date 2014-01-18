@@ -75,12 +75,19 @@ input[type="color"] {
         outline: 0;
     }
 }
+input[type="color"] {
+    width: $unicorn-form-color-field-width;
+    background: transparent;
+    border: none;
+}
 
 //http://css-tricks.com/snippets/css/turn-off-number-input-spinners/
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+@if($unicorn-turn-off-number-input-spinners) {
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 }
 
 textarea {
