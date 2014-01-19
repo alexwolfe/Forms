@@ -4,6 +4,13 @@
 
 #{$unicorn-form-namespace} {
     background: $unicorn-form-bgcolor;
+    fieldset {
+        border: 1px solid darken($unicorn-form-bgcolor, 10%);
+        legend {
+            color: $unicorn-form-font-muted;
+        }
+    }
+    ul, li {list-style: none;}
 }
 
 label,
@@ -17,9 +24,18 @@ textarea {
 
 #{$unicorn-form-namespace}-field-group {
     margin-bottom: $unicorn-form-font-size;
-    #{$unicorn-form-namespace}-field-label {
+    width: 100%;
+    max-width: 100%;
+    label {
         display: block;
         color: $unicorn-form-font-dark;
+        cursor: $unicorn-form-cursor;
+        margin-bottom: $unicorn-form-font-size * .7;
+
+        //TODO: Inline labels can be place to right or left of input etc.
+        &.inline {
+            display: inline-block;
+        }
     }
 
     #{$unicorn-form-namespace}-field {
@@ -53,18 +69,14 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
     display: inline-block;
-    // -moz-box-sizing: border-box;
-    // -webkit-box-sizing: border-box;
-    //  box-sizing: border-box;
     @include box-sizing(border-box);
     height: $unicorn-form-input-height;
-    width: 100%;
-    max-width: 100%;
     padding: $unicorn-form-input-padding;
     background: $unicorn-form-fields-bgcolor;
     border: 1px solid $unicorn-form-border-color;
     @include border-radius($unicorn-form-border-radius);
     @include box-shadow(inset 0px 1px 1px rgba(0,0,0,0.075));
+    margin: 0;
 
     outline: none;
     -webkit-appearance: none;
@@ -131,11 +143,12 @@ select {
 input[type=radio],
 input[type=checkbox] {
     margin: 0;
+    vertical-align: middle;
     cursor: $unicorn-form-cursor;
 }
 
 #{$unicorn-form-namespace}-checkbox {
-    display: block;
+    display: inline-block;
     position: relative;
     background: $unicorn-form-fields-bgcolor;
     padding: ($unicorn-form-base-line-height - ($unicorn-form-checkbox-font-size * 1.2)) / 2 0 ($unicorn-form-base-line-height - ($unicorn-form-checkbox-font-size * 1.2)) / 2 $unicorn-form-checkbox-height * 1.61;

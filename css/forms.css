@@ -16,8 +16,20 @@
 .form {
   background: #eeeeee;
 }
+/* line 7, ../scss/forms.scss */
+.form fieldset {
+  border: 1px solid #d4d4d4;
+}
+/* line 9, ../scss/forms.scss */
+.form fieldset legend {
+  color: gray;
+}
+/* line 13, ../scss/forms.scss */
+.form ul, .form li {
+  list-style: none;
+}
 
-/* line 11, ../scss/forms.scss */
+/* line 18, ../scss/forms.scss */
 label,
 input,
 textarea {
@@ -27,16 +39,24 @@ textarea {
   font-weight: 300;
 }
 
-/* line 18, ../scss/forms.scss */
+/* line 25, ../scss/forms.scss */
 .form-field-group {
   margin-bottom: 14px;
+  width: 100%;
+  max-width: 100%;
 }
-/* line 20, ../scss/forms.scss */
-.form-field-group .form-field-label {
+/* line 29, ../scss/forms.scss */
+.form-field-group label {
   display: block;
   color: #4d4d4d;
+  cursor: pointer;
+  margin-bottom: 9.8px;
 }
-/* line 25, ../scss/forms.scss */
+/* line 36, ../scss/forms.scss */
+.form-field-group label.inline {
+  display: inline-block;
+}
+/* line 41, ../scss/forms.scss */
 .form-field-group .form-field {
   position: relative;
   /* TODO
@@ -44,7 +64,7 @@ textarea {
   */
 }
 
-/* line 54, ../scss/forms.scss */
+/* line 70, ../scss/forms.scss */
 textarea,
 input[type="text"],
 input[type="password"],
@@ -65,8 +85,6 @@ input[type="color"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 42px;
-  width: 100%;
-  max-width: 100%;
   padding: 7px;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -78,10 +96,11 @@ input[type="color"] {
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+  margin: 0;
   outline: none;
   -webkit-appearance: none;
 }
-/* line 73, ../scss/forms.scss */
+/* line 85, ../scss/forms.scss */
 textarea:focus, textarea.focus,
 input[type="text"]:focus,
 input[type="text"].focus,
@@ -118,21 +137,21 @@ input[type="color"].focus {
   outline: 0;
 }
 
-/* line 79, ../scss/forms.scss */
+/* line 91, ../scss/forms.scss */
 input[type="color"] {
   width: 50px;
   background: transparent;
   border: none;
 }
 
-/* line 88, ../scss/forms.scss */
+/* line 100, ../scss/forms.scss */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* line 94, ../scss/forms.scss */
+/* line 106, ../scss/forms.scss */
 textarea {
   height: auto;
   min-width: 100%;
@@ -140,7 +159,7 @@ textarea {
   padding: 7px;
 }
 
-/* line 101, ../scss/forms.scss */
+/* line 113, ../scss/forms.scss */
 select {
   opacity: 0;
   display: block;
@@ -152,12 +171,12 @@ select {
   padding: 0 7px;
   -webkit-appearance: none;
 }
-/* line 111, ../scss/forms.scss */
+/* line 123, ../scss/forms.scss */
 select option {
   font-size: 12px;
 }
 
-/* line 116, ../scss/forms.scss */
+/* line 128, ../scss/forms.scss */
 ::-webkit-input-placeholder {
   color: gray;
   -webkit-transition: 0.2s all;
@@ -166,7 +185,7 @@ select option {
   transition: 0.2s all;
 }
 
-/* line 120, ../scss/forms.scss */
+/* line 132, ../scss/forms.scss */
 :-moz-placeholder {
   color: gray;
   -webkit-transition: 0.2s all;
@@ -175,26 +194,27 @@ select option {
   transition: 0.2s all;
 }
 
-/* line 124, ../scss/forms.scss */
+/* line 136, ../scss/forms.scss */
 ::-webkit-input-placeholder:focus {
   color: #a6a6a6;
 }
 
-/* line 127, ../scss/forms.scss */
+/* line 139, ../scss/forms.scss */
 :-moz-placeholder:focus {
   color: #a6a6a6;
 }
 
-/* line 132, ../scss/forms.scss */
+/* line 144, ../scss/forms.scss */
 input[type=radio],
 input[type=checkbox] {
   margin: 0;
+  vertical-align: middle;
   cursor: pointer;
 }
 
-/* line 137, ../scss/forms.scss */
+/* line 150, ../scss/forms.scss */
 .form-checkbox {
-  display: block;
+  display: inline-block;
   position: relative;
   background: white;
   padding: 2.6px 0 2.6px 20.93px;
@@ -204,7 +224,7 @@ input[type=checkbox] {
   line-height: 1.2;
   cursor: pointer;
 }
-/* line 148, ../scss/forms.scss */
+/* line 161, ../scss/forms.scss */
 .form-checkbox input[type=radio],
 .form-checkbox input[type=checkbox] {
   display: block;
@@ -212,7 +232,7 @@ input[type=checkbox] {
   top: 3.3px;
   left: 0px;
 }
-/* line 154, ../scss/forms.scss */
+/* line 167, ../scss/forms.scss */
 .form-checkbox a {
   text-decoration: underline;
 }
