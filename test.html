@@ -314,47 +314,62 @@
                 <h3>Misc</h3>
             </hgroup>
             <section class="gallery">
-                <ul>
-                    <li class="form">
-                        <div class="form-field-group">
-                            <input class="range form form-field clearfix" type="range"min="0"max="10"step="2"value="6">
-                        </div>
-                    </li>
-                    <li class="form">
-                        <div class="form-field-group">
-                            <input class="color form-field clearfix" type="color" name="color">
-                        </div>
-                    </li>
-                    <li class="form">
-                        <div class="form-field-group">
-                            <input class="file form-field clearfix" type="file" name="file">
-                        </div>
-                    </li>
-                    <form class="form" action="http://alexwolfe.github.io/Buttons/" method="get">
-                        <div class="form-field-group">
-                            <input class="button form-field clearfix" type="submit" name="submit" value="Go Grab Buttons!">
-                        </div>
-                    </form>
-                </ul>
+<ul>
+    <li class="form">
+        <div class="form-field-group">
+            <label class="inline" for="range">Ranges</label>
+            <input class="range form form-field clearfix" type="range" name="range" min="0"max="10" step="2" value="6">
+        </div>
+    </li>
+</ul>
+<ul>
+    <li class="form">
+        <div class="form-field-group">
+            <label class="inline" for="color">Colors</label>
+            <input class="color form-field clearfix" type="color" name="color">
+        </div>
+    </li>
+</ul>
+<ul>
+    <li class="form">
+        <div class="form-field-group">
+            <label class="inline" for="file">File</label>
+            <input class="file form-field clearfix" type="file" name="file">
+        </div>
+    </li>
+</ul>
+<ul>
+    <li>
+        <form class="form" action="http://alexwolfe.github.io/Buttons/" method="get">
+            <div class="form-field-group">
+                <label class="inline" for="submit-btn">Buttons</label>
+                <input class="button form-field clearfix" type="submit" name="submit-btn" value="Go Grab Buttons!">
+            </div>
+        </form>
+    </li>
+</ul>
             </section>
 
             <pre class="prettyprint linenums">
 &lt;div class=&quot;form-field-group&quot;&gt;
-  &lt;input class=&quot;range form form-field clearfix&quot; type=&quot;range&quot;min=&quot;0&quot;max=&quot;10&quot;step=&quot;2&quot;value=&quot;6&quot;&gt;
+    &lt;label class=&quot;inline&quot; for=&quot;range&quot;&gt;Ranges&lt;/label&gt;
+    &lt;input class=&quot;range form form-field clearfix&quot; type=&quot;range&quot; name=&quot;range&quot; min=&quot;0&quot;max=&quot;10&quot; step=&quot;2&quot; value=&quot;6&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-field-group&quot;&gt;
-  &lt;input class=&quot;color form-field clearfix&quot; type=&quot;color&quot; name=&quot;color&quot;&gt;
+    &lt;label class=&quot;inline&quot; for=&quot;color&quot;&gt;Colors&lt;/label&gt;
+    &lt;input class=&quot;color form-field clearfix&quot; type=&quot;color&quot; name=&quot;color&quot;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;form-field-group&quot;&gt;
-  &lt;input class=&quot;file form-field clearfix&quot; type=&quot;file&quot; name=&quot;file&quot;&gt;                        
+    &lt;label class=&quot;inline&quot; for=&quot;file&quot;&gt;File&lt;/label&gt;
+    &lt;input class=&quot;file form-field clearfix&quot; type=&quot;file&quot; name=&quot;file&quot;&gt;
 &lt;/div&gt;
-&lt;!-- OF COURSE BETTER BUTTONS WILL BE HAD IF YOU USE THE BUTTONS LIB! --&gt;
-&lt;div class=&quot;form-field-group&quot;&gt;
-  &lt;input class=&quot;button form-field clearfix&quot; type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Go Grab Buttons!&quot;&gt;
-&lt;/div&gt;</pre>
+&lt;form class=&quot;form&quot; action=&quot;http://alexwolfe.github.io/Buttons/&quot; method=&quot;get&quot;&gt;
+    &lt;div class=&quot;form-field-group&quot;&gt;
+        &lt;label class=&quot;inline&quot; for=&quot;submit-btn&quot;&gt;Buttons&lt;/label&gt;
+        &lt;input class=&quot;button form-field clearfix&quot; type=&quot;submit&quot; name=&quot;submit-btn&quot; value=&quot;Go Grab Buttons!&quot;&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
         </section>
-
-
 
 
         <section id="more" class="showcase">
