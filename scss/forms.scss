@@ -53,9 +53,10 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
     display: inline-block;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-     box-sizing: border-box;
+    // -moz-box-sizing: border-box;
+    // -webkit-box-sizing: border-box;
+    //  box-sizing: border-box;
+    @include box-sizing(border-box);
     height: $unicorn-form-input-height;
     width: 100%;
     max-width: 100%;
@@ -130,7 +131,7 @@ select {
 input[type=radio],
 input[type=checkbox] {
     margin: 0;
-    cursor: pointer;
+    cursor: $unicorn-form-cursor;
 }
 
 #{$unicorn-form-namespace}-checkbox {
@@ -142,7 +143,7 @@ input[type=checkbox] {
     height: $unicorn-form-font-size * 1.2;
     width: $unicorn-form-font-size * 1.2;
     line-height: 1.2;
-    cursor: pointer;
+    cursor: $unicorn-form-cursor;
     input[type=radio],
     input[type=checkbox] {
         display: block;

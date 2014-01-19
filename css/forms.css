@@ -61,8 +61,8 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
   display: inline-block;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   height: 42px;
   width: 100%;
@@ -81,7 +81,7 @@ input[type="color"] {
   outline: none;
   -webkit-appearance: none;
 }
-/* line 72, ../scss/forms.scss */
+/* line 73, ../scss/forms.scss */
 textarea:focus, textarea.focus,
 input[type="text"]:focus,
 input[type="text"].focus,
@@ -118,21 +118,21 @@ input[type="color"].focus {
   outline: 0;
 }
 
-/* line 78, ../scss/forms.scss */
+/* line 79, ../scss/forms.scss */
 input[type="color"] {
   width: 50px;
   background: transparent;
   border: none;
 }
 
-/* line 87, ../scss/forms.scss */
+/* line 88, ../scss/forms.scss */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* line 93, ../scss/forms.scss */
+/* line 94, ../scss/forms.scss */
 textarea {
   height: auto;
   min-width: 100%;
@@ -140,7 +140,7 @@ textarea {
   padding: 7px;
 }
 
-/* line 100, ../scss/forms.scss */
+/* line 101, ../scss/forms.scss */
 select {
   opacity: 0;
   display: block;
@@ -152,12 +152,12 @@ select {
   padding: 0 7px;
   -webkit-appearance: none;
 }
-/* line 110, ../scss/forms.scss */
+/* line 111, ../scss/forms.scss */
 select option {
   font-size: 12px;
 }
 
-/* line 115, ../scss/forms.scss */
+/* line 116, ../scss/forms.scss */
 ::-webkit-input-placeholder {
   color: gray;
   -webkit-transition: 0.2s all;
@@ -166,7 +166,7 @@ select option {
   transition: 0.2s all;
 }
 
-/* line 119, ../scss/forms.scss */
+/* line 120, ../scss/forms.scss */
 :-moz-placeholder {
   color: gray;
   -webkit-transition: 0.2s all;
@@ -175,24 +175,24 @@ select option {
   transition: 0.2s all;
 }
 
-/* line 123, ../scss/forms.scss */
+/* line 124, ../scss/forms.scss */
 ::-webkit-input-placeholder:focus {
   color: #a6a6a6;
 }
 
-/* line 126, ../scss/forms.scss */
+/* line 127, ../scss/forms.scss */
 :-moz-placeholder:focus {
   color: #a6a6a6;
 }
 
-/* line 131, ../scss/forms.scss */
+/* line 132, ../scss/forms.scss */
 input[type=radio],
 input[type=checkbox] {
   margin: 0;
   cursor: pointer;
 }
 
-/* line 136, ../scss/forms.scss */
+/* line 137, ../scss/forms.scss */
 .form-checkbox {
   display: block;
   position: relative;
@@ -204,7 +204,7 @@ input[type=checkbox] {
   line-height: 1.2;
   cursor: pointer;
 }
-/* line 147, ../scss/forms.scss */
+/* line 148, ../scss/forms.scss */
 .form-checkbox input[type=radio],
 .form-checkbox input[type=checkbox] {
   display: block;
@@ -212,7 +212,7 @@ input[type=checkbox] {
   top: 3.3px;
   left: 0px;
 }
-/* line 153, ../scss/forms.scss */
+/* line 154, ../scss/forms.scss */
 .form-checkbox a {
   text-decoration: underline;
 }
