@@ -147,6 +147,7 @@ input[type=checkbox] {
     cursor: $unicorn-form-cursor;
 }
 
+#{$unicorn-form-namespace}-radio,
 #{$unicorn-form-namespace}-checkbox {
     display: inline-block;
     position: relative;
