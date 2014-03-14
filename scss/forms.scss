@@ -120,6 +120,7 @@ select {
     font-size: $unicorn-form-font-size;
     padding: 0 $unicorn-form-font-size / 2;
     -webkit-appearance: none;
+    -moz-appearance: none;
     option {
         font-size: $unicorn-form-small-font-size;
     }

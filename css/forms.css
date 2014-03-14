@@ -169,13 +169,14 @@ select {
   font-size: 14px;
   padding: 0 7px;
   -webkit-appearance: none;
+  -moz-appearance: none;
 }
-/* line 123, ../scss/forms.scss */
+/* line 124, ../scss/forms.scss */
 select option {
   font-size: 12px;
 }
 
-/* line 128, ../scss/forms.scss */
+/* line 129, ../scss/forms.scss */
 ::-webkit-input-placeholder {
   color: gray;
   -webkit-transition: 0.2s all;
@@ -184,7 +185,7 @@ select option {
   transition: 0.2s all;
 }
 
-/* line 132, ../scss/forms.scss */
+/* line 133, ../scss/forms.scss */
 :-moz-placeholder {
   color: gray;
   -webkit-transition: 0.2s all;
@@ -193,17 +194,17 @@ select option {
   transition: 0.2s all;
 }
 
-/* line 136, ../scss/forms.scss */
+/* line 137, ../scss/forms.scss */
 ::-webkit-input-placeholder:focus {
   color: #a6a6a6;
 }
 
-/* line 139, ../scss/forms.scss */
+/* line 140, ../scss/forms.scss */
 :-moz-placeholder:focus {
   color: #a6a6a6;
 }
 
-/* line 144, ../scss/forms.scss */
+/* line 145, ../scss/forms.scss */
 input[type=radio],
 input[type=checkbox] {
   margin: 0;
@@ -211,7 +212,7 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
-/* line 151, ../scss/forms.scss */
+/* line 152, ../scss/forms.scss */
 .form-radio,
 .form-checkbox {
   display: inline-block;
@@ -224,7 +225,7 @@ input[type=checkbox] {
   line-height: 1.2;
   cursor: pointer;
 }
-/* line 162, ../scss/forms.scss */
+/* line 163, ../scss/forms.scss */
 .form-radio input[type=radio],
 .form-radio input[type=checkbox],
 .form-checkbox input[type=radio],
@@ -234,7 +235,7 @@ input[type=checkbox] {
   top: 3.3px;
   left: 0px;
 }
-/* line 168, ../scss/forms.scss */
+/* line 169, ../scss/forms.scss */
 .form-radio a,
 .form-checkbox a {
   text-decoration: underline;
