@@ -111,7 +111,7 @@ textarea {
 }
 
 select {
-    opacity: 0;
+    //opacity: 0;//uncomment if you're going to dynamically put a span and style that
     display: block;
     position: relative;
     z-index: 1;

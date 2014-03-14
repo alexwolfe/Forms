@@ -161,7 +161,6 @@ textarea {
 
 /* line 113, ../scss/forms.scss */
 select {
-  opacity: 0;
   display: block;
   position: relative;
   z-index: 1;
@@ -212,7 +211,8 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
-/* line 150, ../scss/forms.scss */
+/* line 151, ../scss/forms.scss */
+.form-radio,
 .form-checkbox {
   display: inline-block;
   position: relative;
@@ -224,7 +224,9 @@ input[type=checkbox] {
   line-height: 1.2;
   cursor: pointer;
 }
-/* line 161, ../scss/forms.scss */
+/* line 162, ../scss/forms.scss */
+.form-radio input[type=radio],
+.form-radio input[type=checkbox],
 .form-checkbox input[type=radio],
 .form-checkbox input[type=checkbox] {
   display: block;
@@ -232,7 +234,8 @@ input[type=checkbox] {
   top: 3.3px;
   left: 0px;
 }
-/* line 167, ../scss/forms.scss */
+/* line 168, ../scss/forms.scss */
+.form-radio a,
 .form-checkbox a {
   text-decoration: underline;
 }
