@@ -50,10 +50,10 @@ nav {
     nav ul a {
       float: left;
       text-decoration: none;
-      padding: 20px 15px;
+      padding: 20px 28px;
       color: #BDBDBD;
       text-transform: uppercase;
-      font-size: 14px; }
+      font-size: 16px; }
 
 header {
   background: #fcfcfc;
@@ -197,7 +197,7 @@ header {
         margin-bottom: 10px;
         color: #666; }
     #setup .instructions em {
-      font-size: 12px; }
+      font-size: 14px; }
   #setup .prettyprint {
     box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.4);
     border-radius: 3px;
@@ -229,7 +229,7 @@ footer {
   color: #FFF;
   padding: 20px;
   text-align: center;
-  font-size: 12px; }
+  font-size: 14px; }
   footer a {
     color: #FFF; }
 
@@ -257,7 +257,7 @@ footer {
           display: block;
           line-height: 24px;
           padding: 10px 20px;
-          font-size: 18px;
+          font-size: 21px;
           text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
