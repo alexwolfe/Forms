@@ -1,19 +1,19 @@
-@import 'compass';
-
 $background: #fcfcfc;
 $border: #EEE;
-$highlight: #d30d15;
+$dark: #212121;
+$light: #BDBDBD;
+$highlight: #ff5722;
 $font: 'Cherry Swash', sans-serif;
 
 //TITLE ANIMATIONS
-@-webkit-keyframes title,
+@keyframes title,
  {
     from {
         color: #EEE;
         margin-top: -220px;
     }
     to {
-        color: #333;
+        color: $dark;
         margin-top: 0px;
     }
 }
@@ -42,7 +42,7 @@ body {
 
 // NAVIGATION /////////////////////////
 nav {
-    @include opacity(.9);
+    opacity: .9;
     background: #FFF;
     padding: 0px;
     position: fixed;
@@ -60,7 +60,7 @@ nav {
 
 
         li {
-            @include transition(border .2s);
+            transition: border .2s;
             float: left;
             margin-bottom: -3px;
 
@@ -72,7 +72,7 @@ nav {
                 padding: 10px;
 
                 a {
-                    @include border-radius(100px);
+                  border-radius: 100px;
                     display: block;
                     line-height: 40px;
                     width: 40px;
@@ -90,7 +90,7 @@ nav {
             float: left;
             text-decoration: none;
             padding: 20px 15px;
-            color: #999;
+            color: $light;
             text-transform: uppercase;
             font-size: 14px;
         }
@@ -116,11 +116,11 @@ header {
             font-weight: 700;
             margin: 0px 10px 0px 10px;
             line-height: 150px;
-            color: #333;
+            color: $dark;
             text-shadow: 0px 1px 0px #FFF;
         }
         h2 {
-            color: #999;
+            color: $light;
             font-weight: normal;
             margin: 0px 10px 20px 10px;
             text-shadow: 0px 1px 0px #FFF;
@@ -181,8 +181,8 @@ header {
 
     //BUTTON SHOWCASE /////////////////////////
     .showcase {
-        @include border-radius(10px);
-        @include box-shadow(inset 0px 1px 2px rgba(0, 0, 0, .10));
+        border-radius: 10px;
+        box-shadow: inset 0px 1px 2px rgba(0, 0, 0, .10);
         background: $background;
         margin: 0px 10px 60px 10px;
         position: relative;
@@ -203,11 +203,11 @@ header {
 
                 em {
                     font-size: 11px;
-                    color: #999;
+                    color: $light;
                     font-style: normal;
 
                     a {
-                        color: #999;
+                        color: $light;
                     }
                 }
             }
@@ -233,19 +233,19 @@ header {
 
             em {
                 font-size: 11px;
-                color: #999;
+                color: $light;
                 font-style: normal;
 
                 a {
-                    color: #999;
+                    color: $light;
                 }
             }
         }
 
         .prettyprint {
-            @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .40));
-            @include border-bottom-radius(10px);
-            background: #333;
+            box-shadow:inset 0px 1px 3px rgba(0, 0, 0, .40);
+            border-bottom-radius: 10px;
+            background: $dark;
             padding: 10px 5px;
             margin: 0;
             font-size: 11px;
@@ -253,7 +253,7 @@ header {
             overflow: hidden;
 
             li.L1, li.L3, li.L5, li.L7, li.L9 {
-                background: #333;
+                background: $dark;
             }
         }
     }
@@ -302,9 +302,9 @@ header {
 
 
     .prettyprint {
-        @include box-shadow(inset 0px 1px 3px rgba(0, 0, 0, .40));
-        @include border-radius(3px);
-        background: #333;
+        box-shadow:inset 0px 1px 3px rgba(0, 0, 0, .40);
+        border-radius: 3px;
+        background: $dark;
         padding: 5px;
         margin: 0;
         font-size: 10px;
@@ -316,7 +316,7 @@ header {
         }
 
         li.L1, li.L3, li.L5, li.L7, li.L9 {
-            background: #333;
+            background: $dark;
         }
     }
 
@@ -341,7 +341,7 @@ header {
 
 
 footer {
-    background: #333;
+    background: $dark;
     color: #FFF;
     padding: 20px;
     text-align: center;
@@ -403,4 +403,3 @@ footer {
         }
     }
 }
-
