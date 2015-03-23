@@ -11,26 +11,21 @@ $small-font-size: 14px;
 
 //TITLE ANIMATIONS
 @keyframes title,
- {
-    from {
-        color: #EEE;
-        margin-top: -220px;
-    }
-    to {
-        color: $dark;
-        margin-top: 0px;
-    }
+{
+  from {
+    color: #EEE;
+    margin-top: -220px;
+  }
+  to {
+    color: $dark;
+    margin-top: 0px;
+  }
 }
 
 @mixin title {
-    -webkit-animation-name: title;
-    -khtml-animation-name: title;
-    -moz-animation-name: title;
-    -ms-animation-name: title;
-    -o-animation-name: title;
-    animation-name: title;
-    -webkit-animation-duration: 2.5s;
-    -webkit-animation-iteration-count: 1;
+  animation-name: title;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
 }
 
 
