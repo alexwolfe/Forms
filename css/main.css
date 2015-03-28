@@ -33,7 +33,7 @@ nav {
       float: left;
       margin-bottom: -3px; }
       nav ul li.selected {
-        border-bottom: 10px solid #ff5722; }
+        border-bottom: 10px solid #607D8B; }
       nav ul li.home {
         padding: 10px; }
         nav ul li.home a {
@@ -41,12 +41,15 @@ nav {
           display: block;
           line-height: 40px;
           width: 40px;
-          background: #ff5722;
+          background: #607D8B;
+          opacity: 0.8;
           color: #FFF;
           font-family: "Cherry Swash", sans-serif;
           text-align: center;
           font-size: 24px;
           padding: 0px; }
+        nav ul li.home:hover a {
+          opacity: 1; }
     nav ul a {
       float: left;
       text-decoration: none;
@@ -56,35 +59,32 @@ nav {
       font-size: 16px; }
 
 header {
-  background: #fcfcfc;
-  padding: 40px 0px 100px 0px;
+  background: center center no-repeat #607D8B;
+  opacity: 0.8;
+  background-size: 1200px;
+  background-position: center 30%;
+  color: #fff;
+  padding: 40px 0px 80px 0px;
   border-bottom: 1px solid #EEE;
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   position: relative; }
-  header hgroup {
+  header .devices {
+    background: center center no-repeat;
+    background-image: url(../images/forms-devices-optimized.svg);
+    min-height: 25em;
+    opacity: .4; }
+  header .title {
     text-align: center;
-    font-family: "Cherry Swash", sans-serif; }
-    header hgroup h1 {
-      -webkit-animation-name: title;
-      -khtml-animation-name: title;
-      -moz-animation-name: title;
-      -ms-animation-name: title;
-      -o-animation-name: title;
-      animation-name: title;
-      -webkit-animation-duration: 2.5s;
-      -webkit-animation-iteration-count: 1;
-      font-size: 150px;
-      font-weight: 700;
-      margin: 0px 10px 0px 10px;
-      line-height: 150px;
-      color: #212121;
-      text-shadow: 0px 1px 0px #FFF; }
-    header hgroup h2 {
-      color: #BDBDBD;
-      font-weight: normal;
-      margin: 0px 10px 20px 10px;
-      text-shadow: 0px 1px 0px #FFF; }
+    color: #ffffff; }
+    header .title > h1 {
+      font-size: 72px;
+      font-family: "Cherry Swash", sans-serif;
+      margin: 0; }
+    header .title > h5 {
+      font-size: 24px;
+      font-weight: 100;
+      margin: 0 0 2em; }
   header .social-forms {
     position: absolute;
     bottom: 20px;

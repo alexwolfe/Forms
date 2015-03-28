@@ -1,8 +1,11 @@
 $background: #fcfcfc;
+$background-header: #CF3A8C;
 $border: #EEE;
 $dark: #212121;
 $light: #BDBDBD;
-$highlight: #ff5722;
+$highlight: #607D8B;
+$highlight-opacity: .8;
+$white: #ffffff;
 $font: 'Cherry Swash', sans-serif;
 $x-large-font-size: 24px;
 $large-font-size: 21px;
@@ -76,11 +79,19 @@ nav {
                     line-height: 40px;
                     width: 40px;
                     background: $highlight;
+                    opacity: $highlight-opacity;
                     color: #FFF;
                     font-family: $font;
                     text-align: center;
                     font-size: $x-large-font-size;
                     padding: 0px;
+
+                }
+
+                &:hover {
+                  a {
+                    opacity: 1;
+                  }
                 }
             }
         }
@@ -98,32 +109,40 @@ nav {
 
 // BILLBOARD /////////////////////////
 header {
-    background: $background;
-    padding: 40px 0px 100px 0px;
+    background: center center no-repeat $highlight;
+;
+    opacity: $highlight-opacity;
+    background-size: 1200px;
+    background-position: center 30%;
+    color: #fff;
+    padding: 40px 0px 80px 0px;
     border-bottom: 1px solid $border;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     position: relative;
 
-    hgroup {
-        text-align: center;
-        font-family: $font;
+    .devices {
+      background: center center no-repeat;
+      background-image: url(../images/forms-devices-optimized.svg);
+      min-height: 25em;
+      opacity: .4;
+    }
 
-        h1 {
-            @include title;
-            font-size: 150px;
-            font-weight: 700;
-            margin: 0px 10px 0px 10px;
-            line-height: 150px;
-            color: $dark;
-            text-shadow: 0px 1px 0px #FFF;
-        }
-        h2 {
-            color: $light;
-            font-weight: normal;
-            margin: 0px 10px 20px 10px;
-            text-shadow: 0px 1px 0px #FFF;
-        }
+    .title {
+      text-align: center;
+      color: $white;
+
+      > h1 {
+        font-size: 72px;
+        font-family: $font;
+        margin: 0;
+      }
+
+      > h5 {
+        font-size: 24px;
+        font-weight: 100;
+        margin: 0 0 2em;
+      }
     }
 
     .social-forms {
