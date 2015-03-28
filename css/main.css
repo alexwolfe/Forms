@@ -33,7 +33,7 @@ nav {
       float: left;
       margin-bottom: -3px; }
       nav ul li.selected {
-        border-bottom: 10px solid #607D8B; }
+        border-bottom: 10px solid #294C5D; }
       nav ul li.home {
         padding: 10px; }
         nav ul li.home a {
@@ -41,15 +41,15 @@ nav {
           display: block;
           line-height: 40px;
           width: 40px;
-          background: #607D8B;
-          opacity: 0.8;
+          background: #294C5D;
           color: #FFF;
           font-family: "Cherry Swash", sans-serif;
           text-align: center;
           font-size: 24px;
           padding: 0px; }
         nav ul li.home:hover a {
-          opacity: 1; }
+          background: #607D8B;
+          opacity: 0.8; }
     nav ul a {
       float: left;
       text-decoration: none;
@@ -62,13 +62,12 @@ header {
   background: center center no-repeat #607D8B;
   opacity: 0.8;
   background-size: 1200px;
-  background-position: center 30%;
   color: #fff;
   padding: 40px 0px 80px 0px;
   border-bottom: 1px solid #EEE;
   position: relative;
   margin-bottom: 80px;
-  position: relative; }
+  margin-top: 7px; }
   header .devices {
     background: center center no-repeat;
     background-image: url(../images/forms-devices-optimized.svg);

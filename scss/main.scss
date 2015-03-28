@@ -4,6 +4,7 @@ $border: #EEE;
 $dark: #212121;
 $light: #BDBDBD;
 $highlight: #607D8B;
+$highlight2: #294C5D;
 $highlight-opacity: .8;
 $white: #ffffff;
 $font: 'Cherry Swash', sans-serif;
@@ -67,7 +68,7 @@ nav {
             margin-bottom: -3px;
 
             &.selected {
-                border-bottom: 10px solid $highlight;
+                border-bottom: 10px solid $highlight2;
             }
 
             &.home {
@@ -78,8 +79,7 @@ nav {
                     display: block;
                     line-height: 40px;
                     width: 40px;
-                    background: $highlight;
-                    opacity: $highlight-opacity;
+                    background: $highlight2;
                     color: #FFF;
                     font-family: $font;
                     text-align: center;
@@ -90,7 +90,8 @@ nav {
 
                 &:hover {
                   a {
-                    opacity: 1;
+                    background: $highlight;
+                    opacity: $highlight-opacity;
                   }
                 }
             }
@@ -113,13 +114,12 @@ header {
 ;
     opacity: $highlight-opacity;
     background-size: 1200px;
-    background-position: center 30%;
     color: #fff;
     padding: 40px 0px 80px 0px;
     border-bottom: 1px solid $border;
     position: relative;
     margin-bottom: 80px;
-    position: relative;
+    margin-top: 7px;
 
     .devices {
       background: center center no-repeat;
