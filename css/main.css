@@ -15,8 +15,8 @@ body {
   font-weight: 300; }
 
 nav {
+  background: #ffffff;
   opacity: .9;
-  background: #FFF;
   padding: 0px;
   position: fixed;
   top: 0px;
@@ -33,7 +33,7 @@ nav {
       float: left;
       margin-bottom: -3px; }
       nav ul li.selected {
-        border-bottom: 10px solid #294C5D; }
+        border-bottom: 10px solid #78909C; }
       nav ul li.home {
         padding: 10px; }
         nav ul li.home a {
@@ -41,15 +41,14 @@ nav {
           display: block;
           line-height: 40px;
           width: 40px;
-          background: #294C5D;
-          color: #FFF;
+          background: #78909C;
+          color: #f2f4f5;
           font-family: "Cherry Swash", sans-serif;
           text-align: center;
           font-size: 24px;
           padding: 0px; }
         nav ul li.home:hover a {
-          background: #607D8B;
-          opacity: 0.8; }
+          background: #455A64; }
     nav ul a {
       float: left;
       text-decoration: none;
@@ -59,15 +58,12 @@ nav {
       font-size: 16px; }
 
 header {
-  background: center center no-repeat #607D8B;
-  opacity: 0.8;
+  background: center center no-repeat #78909C;
   background-size: 1200px;
-  color: #fff;
-  padding: 40px 0px 80px 0px;
+  color: #ffffff;
+  padding: 40px 0px 0px 0px;
   border-bottom: 1px solid #EEE;
-  position: relative;
-  margin-bottom: 80px;
-  margin-top: 7px; }
+  position: relative; }
   header .devices {
     background: center center no-repeat;
     background-image: url(../images/forms-devices-optimized.svg);
@@ -75,7 +71,7 @@ header {
     opacity: .4; }
   header .title {
     text-align: center;
-    color: #ffffff; }
+    color: #f2f4f5; }
     header .title > h1 {
       font-size: 72px;
       font-family: "Cherry Swash", sans-serif;
@@ -84,34 +80,31 @@ header {
       font-size: 24px;
       font-weight: 100;
       margin: 0 0 2em; }
-  header .social-forms {
-    position: absolute;
-    bottom: 20px;
-    left: 20px; }
-    header .social-forms .github-button {
-      min-width: 90px; }
-  header .button-download {
-    position: absolute;
-    bottom: -74px;
-    left: 50%;
-    margin-left: -74px;
-    z-index: 10; }
   @media only screen and (max-width: 480px) {
     header {
       padding: 70px 0px 80px 0px; }
-      header hgroup h1 {
-        font-size: 70px;
-        line-height: 80px;
-        margin: 0px 10px 10px 10px; }
-      header hgroup h2 {
-        font-size: 24px;
-        margin: 0px 20px 20px 20px; }
       header .social-buttons {
         position: absolute;
         top: 20px;
         left: auto;
         bottom: auto;
         right: 20px; } }
+
+.form-download {
+  position: relative; }
+
+.button-download {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: -40px; }
+
+.social-forms {
+  width: 300px;
+  max-width: 300px;
+  margin: 0 auto; }
+  .social-forms .github-button {
+    min-width: 90px; }
 
 #page {
   max-width: 920px;
@@ -129,7 +122,7 @@ header {
       #page .showcase hgroup h3 {
         font-family: "Cherry Swash", sans-serif;
         font-weight: lighter;
-        color: #CCC;
+        color: #CFD8DC;
         font-size: 16px;
         line-height: 30px;
         margin: 0px;
@@ -170,20 +163,20 @@ header {
         background: #212121; }
 
 #setup {
-  background: #EEE; }
+  background: #CFD8DC; }
   #setup h2 {
     text-align: center;
     font-weight: 100;
     font-size: 60px;
-    color: #CCC;
-    text-shadow: 0px 1px 0px #FFF;
+    color: #666666;
+    text-shadow: 0px 1px 0px #ffffff;
     margin: 0px 0px 20px 0px;
     line-height: 60px; }
     @media only screen and (max-width: 480px) {
       #setup h2 {
         font-size: 44px; } }
   #setup h3 {
-    color: #666;
+    color: #666666;
     font-size: 22px; }
   #setup .instructions {
     max-width: 880px;
@@ -194,7 +187,7 @@ header {
       #setup .instructions ol.steps > li {
         line-height: 22px;
         margin-bottom: 10px;
-        color: #666; }
+        color: #666666; }
     #setup .instructions em {
       font-size: 14px; }
   #setup .prettyprint {
@@ -224,13 +217,14 @@ header {
         margin: 20px auto 40px auto; } }
 
 footer {
-  background: #212121;
-  color: #FFF;
+  background: #455A64;
+  color: #f2f4f5;
   padding: 20px;
   text-align: center;
-  font-size: 14px; }
+  font-size: 14px;
+  letter-spacing: .06rem; }
   footer a {
-    color: #FFF; }
+    color: #ffffff; }
 
 @media only screen and (max-width: 480px) {
   body {

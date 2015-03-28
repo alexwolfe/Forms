@@ -3,10 +3,14 @@ $background-header: #CF3A8C;
 $border: #EEE;
 $dark: #212121;
 $light: #BDBDBD;
-$highlight: #607D8B;
-$highlight2: #294C5D;
-$highlight-opacity: .8;
+$highlight: #78909C;
+$highlight-hover: #455A64;
+$highlight-setup: #CFD8DC;
 $white: #ffffff;
+$white-bluegrey: lighten(#eceff1, 2%);
+$black: #333333;
+$mid-black: #666666;
+$light-black: #999999;
 $font: 'Cherry Swash', sans-serif;
 $x-large-font-size: 24px;
 $large-font-size: 21px;
@@ -17,7 +21,7 @@ $small-font-size: 14px;
 @keyframes title,
 {
   from {
-    color: #EEE;
+    color: $border;
     margin-top: -220px;
   }
   to {
@@ -45,8 +49,8 @@ body {
 
 // NAVIGATION /////////////////////////
 nav {
+    background: $white;
     opacity: .9;
-    background: #FFF;
     padding: 0px;
     position: fixed;
     top: 0px;
@@ -68,7 +72,7 @@ nav {
             margin-bottom: -3px;
 
             &.selected {
-                border-bottom: 10px solid $highlight2;
+              border-bottom: 10px solid $highlight;
             }
 
             &.home {
@@ -76,22 +80,20 @@ nav {
 
                 a {
                   border-radius: 100px;
-                    display: block;
-                    line-height: 40px;
-                    width: 40px;
-                    background: $highlight2;
-                    color: #FFF;
-                    font-family: $font;
-                    text-align: center;
-                    font-size: $x-large-font-size;
-                    padding: 0px;
-
+                  display: block;
+                  line-height: 40px;
+                  width: 40px;
+                  background: $highlight;
+                  color: $white-bluegrey;
+                  font-family: $font;
+                  text-align: center;
+                  font-size: $x-large-font-size;
+                  padding: 0px;
                 }
 
                 &:hover {
                   a {
-                    background: $highlight;
-                    opacity: $highlight-opacity;
+                    background: $highlight-hover;
                   }
                 }
             }
@@ -112,14 +114,11 @@ nav {
 header {
     background: center center no-repeat $highlight;
 ;
-    opacity: $highlight-opacity;
     background-size: 1200px;
-    color: #fff;
-    padding: 40px 0px 80px 0px;
+    color: $white;
+    padding: 40px 0px 0px 0px;
     border-bottom: 1px solid $border;
     position: relative;
-    margin-bottom: 80px;
-    margin-top: 7px;
 
     .devices {
       background: center center no-repeat;
@@ -130,7 +129,7 @@ header {
 
     .title {
       text-align: center;
-      color: $white;
+      color: $white-bluegrey;
 
       > h1 {
         font-size: 72px;
@@ -145,42 +144,8 @@ header {
       }
     }
 
-    .social-forms {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-
-        .github-button {
-            min-width: 90px;
-        }
-    }
-
-    .button-download {
-        position: absolute;
-        bottom: -74px;
-        left: 50%;
-        margin-left: -74px;
-        z-index: 10;
-
-        .button {
-            //color: #2c9adb;
-        }
-    }
     @media only screen and (max-width: 480px) {
-    padding: 70px 0px 80px 0px;
-
-        hgroup {
-            h1 {
-                font-size: 70px;
-                line-height: 80px;
-                margin: 0px 10px 10px 10px;
-            }
-            h2 {
-                font-size: $x-large-font-size;
-                margin: 0px 20px 20px 20px;
-            }
-        }
-
+      padding: 70px 0px 80px 0px;
         .social-buttons {
             position: absolute;
             top: 20px;
@@ -190,6 +155,30 @@ header {
         }
     }
 }
+
+
+.form-download {
+  position: relative;
+}
+
+.button-download {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: -40px;
+}
+
+
+.social-forms {
+  width: 300px;
+  max-width: 300px;
+  margin: 0 auto;
+
+  .github-button {
+    min-width: 90px;
+  }
+}
+
 
 
 // PAGE BODY /////////////////////////
@@ -213,7 +202,7 @@ header {
             h3 {
                 font-family: $font;
                 font-weight: lighter;
-                color: #CCC;
+                color: $highlight-setup;
                 font-size: $base-font-size;
                 line-height: 30px;
                 margin: 0px;
@@ -279,14 +268,14 @@ header {
 
 
 #setup {
-    background: #EEE;
+    background: $highlight-setup;
 
     h2 {
         text-align: center;
         font-weight: 100;
         font-size: 60px;
-        color: #CCC;
-        text-shadow: 0px 1px 0px #FFF;
+        color: $mid-black;
+        text-shadow: 0px 1px 0px $white;
         margin: 0px 0px 20px 0px ;
         line-height: 60px;
 
@@ -295,7 +284,7 @@ header {
         }
     }
     h3 {
-        color: #666;
+        color: $mid-black;
         font-size: 22px;
     }
 
@@ -309,7 +298,7 @@ header {
             > li {
                 line-height: 22px;
                 margin-bottom: 10px;
-                color: #666;
+                color: $mid-black;
             }
         }
 
@@ -359,14 +348,15 @@ header {
 
 
 footer {
-    background: $dark;
-    color: #FFF;
+    background: $highlight-hover;
+    color: $white-bluegrey;
     padding: 20px;
     text-align: center;
     font-size: $small-font-size;
+    letter-spacing: .06rem;
 
     a {
-        color: #FFF;
+        color: $white;
     }
 }
 
