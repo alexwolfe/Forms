@@ -119,13 +119,7 @@ header {
     padding: 40px 0px 0px 0px;
     border-bottom: 1px solid $border;
     position: relative;
-
-    .devices {
-      background: center center no-repeat;
-      background-image: url(../images/forms-devices-optimized.svg);
-      min-height: 25em;
-      opacity: .4;
-    }
+    min-height: 45em;
 
     .title {
       text-align: center;
@@ -138,24 +132,32 @@ header {
       }
 
       > h5 {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 100;
         margin: 0 0 2em;
       }
+
+    }
+
+    .devices {
+      margin-top: 80px;
+      background: center center no-repeat;
+      background-image: url(../images/forms-devices-optimized.svg);
+      opacity: .3;
+      min-height: 22em;
     }
 
     @media only screen and (max-width: 480px) {
       padding: 70px 0px 80px 0px;
-        .social-buttons {
-            position: absolute;
-            top: 20px;
-            left: auto;
-            bottom: auto;
-            right: 20px;
-        }
+        // .social-buttons {
+        //     position: absolute;
+        //     top: 20px;
+        //     left: auto;
+        //     bottom: auto;
+        //     right: 20px;
+        // }
     }
 }
-
 
 .form-download {
   position: relative;
@@ -165,18 +167,33 @@ header {
   display: block;
   max-width: 300px;
   margin: 0 auto;
-  margin-top: -40px;
+  margin-top: 60px;
 }
-
 
 .social-forms {
   width: 300px;
   max-width: 300px;
   margin: 0 auto;
+  margin-top: 15px;
 
   .github-button {
     min-width: 90px;
   }
+
+
+
+
+  //TODO: Re-enable twitter & facebook
+  .twitter-share-form,
+  .fb-like {
+    display: none;
+  }
+
+
+
+
+
+
 }
 
 
@@ -185,6 +202,7 @@ header {
 #page {
     max-width: 920px;
     margin: 0px auto;
+    margin-top: 80px;
 
     //BUTTON SHOWCASE /////////////////////////
     .showcase {
